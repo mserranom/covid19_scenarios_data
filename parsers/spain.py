@@ -8,7 +8,7 @@ import unidecode
 from .utils import write_tsv
 
 LOC = "case-counts/Europe/Southern Europe/Spain"
-cols = ['time', 'cases', 'deaths', 'ICU', 'recovered']
+cols = ['time', 'cases', 'deaths', 'hospitalized', 'ICU', 'recovered']
 
 cases_url = 'https://raw.githubusercontent.com/datadista/datasets/master/COVID%2019/ccaa_covid19_casos.csv'
 deaths_url = 'https://raw.githubusercontent.com/datadista/datasets/master/COVID%2019/ccaa_covid19_fallecidos.csv'
@@ -69,6 +69,7 @@ def parse():
                 current_date.strftime('%Y-%m-%d'),
                 get_value(data_cases),
                 get_value(data_deaths),
+                0,  # no data for hospitalisation
                 get_value(data_icu),
                 get_value(data_recovered)]
             if entry[1] or entry[2] or entry[3] or entry[4]:
