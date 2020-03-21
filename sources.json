@@ -4,6 +4,11 @@
     "dataProvenance": "Dipartimento della Protezione Civile",
     "license": "CC-BY-4.0"
   },
+  "spain": {
+    "primarySource": "https://github.com/datadista/datasets/tree/master/COVID%2019",
+    "dataProvenance": "Spanish Ministry of Health, Consumer Affairs and Social Welfare via datadista.com",
+    "license": "none specified"
+  },
   "switzerland": {
     "primarySource": "https://raw.github.com/openZH/covid_19/master/COVID19_Cases_Cantons_CH_total.csv",
     "dataProvenance": "OpenZH",
